@@ -1,0 +1,20 @@
+<div class="easyui-panel" style="width:100%">
+<div style="padding:10px 60px 20px 60px">
+<div style="text-align:center;padding:5px">
+<p><img src="http://img.bhs4.com/ae/5/ae584298ab1d6a77ca6495341ad765f22124cf3d_small.jpg"  style="width:60px; height:60px"/></p>
+<p>Your project will be saved at the following location:</p>
+</div>
+<form id="dropboxloginform" target="_blank" method="get" data-options="url:'dropbox_login'" enctype="multipart/form-data">
+<table cellpadding="5">
+<tr>
+<td><b>compileonline/</b></td>
+<td><input class="easyui-textbox" type="text" id="projecttitle" data-options="required:true" style="width:300px"></input></td>
+</tr>
+</table>
+</form>
+<div style="text-align:center;padding:5px">
+	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="openWindow()" style="width:60px"> Continue </a>
+	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="close_dropbox_login()" style="width:60px"> Cancel </a>
+</div>
+<div id="gitloading" style="visibility:hidden"></div>
+</div>
