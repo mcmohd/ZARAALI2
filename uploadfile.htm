@@ -1,0 +1,25 @@
+<style scoped>
+.f1{
+width:400px;
+}
+</style>
+<div class="easyui-panel" style="width:100%">
+<div style="padding:10px 60px 20px 60px">
+<div style="text-align:center;padding:5px">
+<p><img src="/images/file-upload.png"  style="width:60px; height:60px"/></p>
+<p>Select your file from any local drive to be uploaded to compileonline</p>
+</div>
+<form id="uploadform" method="post" data-options="url:'upload_file'" enctype="multipart/form-data">
+  <table style="width:100%; text-align: center">
+   <tr style="text-align:center;height:100px;">
+   <td>File:</td>
+   <td><input name="file" id="file" class="f1 easyui-filebox"></input></td>
+   </tr>
+   </table>
+</form>
+<div style="text-align:center;padding:5px">
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="uploadFile()" style="width:60px"> Upload </a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="closeFormBox()" style="width:60px"> Cancel </a>
+</div>
+<br>
+</div>
